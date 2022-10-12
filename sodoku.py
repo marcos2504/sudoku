@@ -29,7 +29,6 @@ class Sudoku:
                         self.board[row][col] = 0
                         raise Exception()
     def verifically_block(self,row,col,number):
-
         for r in self.row_block(row):
             for c in self.column_block(col):
                 if self.board[r][c] == number and r != row and c != col:
